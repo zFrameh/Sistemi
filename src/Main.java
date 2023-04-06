@@ -4,17 +4,17 @@ import java.net.URI;
 import java.util.concurrent.TimeUnit;
 
 class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws InterruptedException {
         Scanner scan = new Scanner(System.in);
         int a = 0;
         int contatore1 = 0;
         int contatore2 = 0;
         int contatore3 = 0;
+        boolean esci = false;
         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
         System.out.println(" ");
         System.out.println("Benvenuto nel \"Sapientino interattivo di sistemi\", digita il numero della domanda per cui vuoi avere una risposta");
-        while (a != 4)
+        while (a != 4 || !esci)
         {
             System.out.println(" ");
             System.out.println("1. Cos’é la RAM.");
@@ -82,6 +82,8 @@ class Main {
                             Desktop.getDesktop().browse(new URI("https://it.wikipedia.org/wiki/RAM"));
                             System.out.println(" ");
                             System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -128,6 +130,8 @@ class Main {
                             Desktop.getDesktop().browse(new URI("https://it.wikipedia.org/wiki/BIOS"));
                             System.out.println(" ");
                             System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -140,36 +144,26 @@ class Main {
                         System.out.println(" ");
                         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                         System.out.println(" ");
-                        System.out.println("Nel mondo dell'hardware esistono motlti tipi di memorie, le quali di cui non abbiamo giò parlato vi sono elencate qui sotto");
+                        System.out.println("Oltre alla RAM, esistono molti altri tipi di memorie, le quali di cui non abbiamo giò parlato vi sono elencate qui sotto");
                         System.out.println(" ");
-                        System.out.println("CACHE");
+                        System.out.println("• CACHE");
                         System.out.println("La Cache è una memoria temporanea, volatile di scrittura e lettura, situata nel processore e viene utilizzata per registrare dati da recuperare velocemente durante l'elaborazione.");
                         System.out.println("Lo scambio di dati con il processore è molto più rapidp rispetto alla memoria RAM e alle memorie di massa e, quindi si riduce notevolmente il tempo di esecuzione dei programmi.");
                         System.out.println(" ");
-                        System.out.println("ROM");
-                        System.out.println("La ROM (o Read Only Memory) è una memoria di sola lettura. Essa è molto veloce ma archivia i dati in modo permanente (e non volatile)");
+                        System.out.println("• ROM");
+                        System.out.println("La ROM (o Read Only Memory) è una memoria di sola lettura. Essa è molto veloce ma è un tipo di memoria permanente, dato che può solamente leggere e non scrivere");
                         System.out.println(" ");
-                        System.out.println("Memorie di massa");
+                        System.out.println("• Memorie di massa");
+                        System.out.println("É un tipo di memoria che immagazzina grandi quantità di dati in modo permanente (non volatile), quindi allo spegnimento della macchina, i dati al loro interno restano.");
                         System.out.println(" ");
+                        System.out.println("• Cloud");
+                        System.out.println("Il cloud è lo spazio di archiviazione che viene messo a disposizione degli utenti su internet. Questa memoria non si trova sul dispositivo dell'utente, ma sui server. ");
                         System.out.println(" ");
-                        System.out.println("Cloud: ");
-                        System.out.println(" ");
-                        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
-                    }
-                    else if (contatore3 == 1)
-                    {
-                        System.out.println(" ");
-                        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
-                        System.out.println(" ");
-                        System.out.println("(+) Lascia che ti ripeti i tipi di memorie");
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        System.out.println("Le memorie non ti sono ancora chiare? Rifammi questa domanda, altrimenti scegli altro dal menù in basso");
+                        System.out.println("Per aprire la pagina Wikipedia sulle memorie, ripeti la domanda, altrimenti passa alla domanda successiva");
                         System.out.println(" ");
                         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     }
-                    else if (contatore3 >= 2)
+                    else if (contatore3 >= 1)
                     {
                         try
                         {
@@ -181,6 +175,9 @@ class Main {
                             Desktop.getDesktop().browse(new URI("https://it.wikipedia.org/wiki/Memoria_(informatica)"));
                             System.out.println(" ");
                             System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
+
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -188,20 +185,34 @@ class Main {
                     contatore3++;
                     break;
                 case 4:
-                        System.out.println("Grazie per aver utilizzato il programma, vuoi aprire la pagina di GitHub? Si/No");
-                        String git = scan.nextLine();
-                        if (git.equalsIgnoreCase("Si")) {
-                            try
-                            {
-                                Desktop.getDesktop().browse(new URI("metterò poi"));
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
+                        System.out.println(" ");
+                        System.out.println("Sei sicuro di voler usscire? Rispondi \"si\" per procedere.");
+                        System.out.println(" ");
+                        String risposta = scan.nextLine();
+                            risposta = scan.nextLine();
+                            System.out.println(" ");
+                            if (risposta.equalsIgnoreCase("si")) {
+                            esci = true;
+                            System.out.println("Chiusura in corso...");
                         }
-
+                        else if (risposta.equalsIgnoreCase("no"))
+                        {
+                            System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
+                        }
+                        else
+                        {
+                            System.out.println("Risposta non valida. Ritorno al menù iniziale...");
+                            System.out.println(" ");
+                            TimeUnit.SECONDS.sleep(2);
+                            System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
+                        }
                     break;
-
                 default:
+                    System.out.println(" ");
                         System.out.println("Hai inserito un numero che non corrisponde ad alcuna domanda, riprova!");
                     break;
             }
