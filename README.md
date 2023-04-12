@@ -1,5 +1,5 @@
 
-# 🛈 Il Sapientino interattivo di sistemi 🛈
+# 🛈 Il Sapientino interattivo di sistemi 
 
 
 
