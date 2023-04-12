@@ -9,4 +9,4 @@ Benvenuto alla documentazione ufficiale del Sapientino Interattivo di sistemi. I
 
 ![Logo](https://i.imgur.com/p0QRClP.png)
 
-In alcune domande vi è disponibile il riassunto semplificato, mentre in tutte è disponibile la pagina Wikipedia
+In alcune domande vi è disponibile il riassunto semplificato, mentre in tutte è disponibile la pagina Wikipedia ↓
