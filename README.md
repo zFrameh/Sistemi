@@ -11,5 +11,5 @@ semplice applicazione! L'interfaccia è molto semplice, nella schermata iniziale
 vi sono mostrate le domande a cui si può chiedere la risposta usando gli appositi
 numeri
 
-![Logo](https://i.imgur.com/JoCcQlB.png)
+![Logo](https://i.imgur.com/p0QRClP.png)
 
