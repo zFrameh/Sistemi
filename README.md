@@ -30,4 +30,4 @@ Benvenuto alla documentazione ufficiale del Sapientino Interattivo di sistemi. I
 
 In alcune domande vi è disponibile il riassunto semplificato, mentre in tutte è disponibile la pagina Wikipedia ↓
 
-![](https://github.com/zFrameh/Sistemi/blob/master/.idea/gif.gif)
+![Logo](https://github.com/zFrameh/Sistemi/blob/master/.idea/gif.gif)
