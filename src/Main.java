@@ -10,17 +10,19 @@ class Main {
         int contatore1 = 0;
         int contatore2 = 0;
         int contatore3 = 0;
+        int contatore4 = 0;
         boolean esci = false;
         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
         System.out.println(" ");
         System.out.println("Benvenuto nel \"Sapientino interattivo di sistemi\", digita il numero della domanda per cui vuoi avere una risposta");
-        while (a != 4 || !esci)
+        while (a != 5 || !esci)
         {
             System.out.println(" ");
             System.out.println("1. Cos’é la RAM.");
             System.out.println("2. Che cos'è il BIOS e a cosa serve.");
             System.out.println("3. Quante memorie esistono.");
-            System.out.println("4. Concludi il programma.");
+            System.out.println("4. Che cosa sono le macchine virtuali.");
+            System.out.println("5. Chiudi il programma");
             System.out.println(" ");
             System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
             System.out.println(" ");
@@ -29,7 +31,7 @@ class Main {
                 a = scan.nextInt();
             } catch (Exception e) {
                 System.out.println(" ");
-                System.out.println("L'input non corrisponde ad alcuna domanda, riprova inserendo un numero!");
+                System.out.println("⚠ L'input non corrisponde ad alcuna domanda, riprova inserendo un numero!");
                 System.out.println(" ");
                 System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                 scan.next();
@@ -66,7 +68,7 @@ class Main {
                         System.out.println("della DRAM. Nella DRAM invece c'è il memory refresh, un circuito che ricarica ogni tanto le celle prima che perdano il loro contenuto, ciò aiuta a");
                         System.out.println("creare memorie più grandi in schede dalle dimensioni molto ridotte.");
                         System.out.println(" ");
-                        System.out.println("Se ancora non hai capito, ripeti la domanda per aprire la pagina Wikipedia della RAM, altrimenti digita altri numeri per imparare altro.");
+                        System.out.println("\uD83D\uDEC8 Se ancora non hai capito, ripeti la domanda per aprire la pagina Wikipedia della RAM, altrimenti digita altri numeri per imparare altro.");
                         System.out.println(" ");
                         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     }
@@ -115,7 +117,7 @@ class Main {
                         System.out.println("il BIOS è l’intermediario tra l’hardware del computer e il sistema operativo e senza il BIOS, il sistema operativo non ha nessuna possibilità di comunicare e prendere potere");
                         System.out.println("dell'hardware della macchina che si vuole avviare. Infatti esso è situato in una memoria sulla scheda madre e contiene una serie di istruzioni indispensabili per l’avvio.");
                         System.out.println(" ");
-                        System.out.println("Se ancora il BIOS non ti è chiaro, ripeti la domanda per aprirne la pagina Wikipedia, altrimenti passa ad altre domande.");
+                        System.out.println("\uD83D\uDEC8 Se ancora il BIOS non ti è chiaro, ripeti la domanda per aprirne la pagina Wikipedia, altrimenti passa ad altre domande.");
                         System.out.println(" ");
                         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");                    }
                     else if (contatore2 >= 2)
@@ -159,7 +161,7 @@ class Main {
                         System.out.println("• Cloud");
                         System.out.println("Il cloud è lo spazio di archiviazione che viene messo a disposizione degli utenti su internet. Questa memoria non si trova sul dispositivo dell'utente, ma sui server. ");
                         System.out.println(" ");
-                        System.out.println("Per aprire la pagina Wikipedia sulle memorie, ripeti la domanda, altrimenti passa alla domanda successiva");
+                        System.out.println("\uD83D\uDEC8 Per aprire la pagina Wikipedia sulle memorie, ripeti la domanda, altrimenti passa alla domanda successiva");
                         System.out.println(" ");
                         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     }
@@ -185,35 +187,71 @@ class Main {
                     contatore3++;
                     break;
                 case 4:
+                    if (contatore4 == 0)
+                    {
                         System.out.println(" ");
-                        System.out.println("Sei sicuro di voler usscire? Rispondi \"si\" per procedere.");
+                        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                        System.out.println(" ");
+                        System.out.println("Le macchine virtuali sono ambienti di esecuzione autonomi che emulano un sistema operativo completo all'interno di un altro sistema operativo. Ciò consente di eseguire applicazioni");
+                        System.out.println("su piattaforme diverse senza dover installare il sistema operativo richiesto. Le macchine virtuali vengono comunemente utilizzate per testare software e sviluppare applicazioni.");
+                        System.out.println("Le macchine virtuali possono essere configurate con diverse quantità di RAM, spazio su disco e core, in base alle esigenze specifiche dell'applicazione o dell'utente.");
+                        System.out.println(" ");
+                        System.out.println("\uD83D\uDEC8 Passa alla domanda successiva o ripeti quest'ultima per aprire la pagina di Wikipedia.");
+                        System.out.println(" ");
+                        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                    }
+                    else if (contatore4 >= 1)
+                    {
+                        try
+                        {
+                            System.out.println(" ");
+                            System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Apertura della pagina web in corso e ritorno al menù iniziale...");
+                            TimeUnit.SECONDS.sleep(2);
+                            Desktop.getDesktop().browse(new URI("https://it.wikipedia.org/wiki/Macchina_virtuale"));
+                            System.out.println(" ");
+                            System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                            System.out.println(" ");
+                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    contatore4++;
+                    break;
+                case 5:
+                        System.out.println(" ");
+                        System.out.println("Sei sicuro di voler uscire? (Si/No)");
                         System.out.println(" ");
                         String risposta = scan.nextLine();
-                            risposta = scan.nextLine();
-                            System.out.println(" ");
-                            if (risposta.equalsIgnoreCase("si")) {
-                            esci = true;
-                            System.out.println("Chiusura in corso...");
-                        }
-                        else if (risposta.equalsIgnoreCase("no"))
-                        {
-                            System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
-                            System.out.println(" ");
-                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
-                        }
-                        else
-                        {
-                            System.out.println("Risposta non valida. Ritorno al menù iniziale...");
-                            System.out.println(" ");
-                            TimeUnit.SECONDS.sleep(2);
-                            System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
-                            System.out.println(" ");
-                            System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
-                        }
+                        risposta = scan.nextLine();
+                        System.out.println(" ");
+                    if (risposta.equalsIgnoreCase("si"))
+                    {
+                        esci = true;
+                        System.out.println("Chiusura in corso...");
+                    }
+                    else if (risposta.equalsIgnoreCase("no"))
+                    {
+                        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                        System.out.println(" ");
+                        System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
+                    }
+                    else
+                    {
+                        System.out.println("⚠ Risposta non valida. Ritorno al menù iniziale...");
+                        System.out.println(" ");
+                        TimeUnit.SECONDS.sleep(2);
+                        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+                        System.out.println(" ");
+                        System.out.println("Bentornato! Seleziona una domanda nel menù sottostante.");
+                    }
                     break;
                 default:
                     System.out.println(" ");
-                        System.out.println("Hai inserito un numero che non corrisponde ad alcuna domanda, riprova!");
+                        System.out.println("⚠ Hai inserito un numero che non corrisponde ad alcuna domanda, riprova!");
                     break;
             }
         }
