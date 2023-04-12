@@ -2,10 +2,10 @@
 
 ## Il Sapientino Interattivo di sistemi 🧑‍🏫 | Legenda
 
-- [Guida al programma](https://github.com/zFrameh/Sistemi#gui-iniziale)
-- [Esecuzione in IntelliJ IDEA](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-allinterno-di-intellij-idea)
-- [Esecuzione via jar e prompt dei comandi](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-via-prompt-dei-comandi)
-- [Autori](https://github.com/zFrameh/Sistemi/blob/master/README.md#autori)
+- [Guida al programma](https://github.com/zFrameh/Sistemi/blob/master/README.md#gui-iniziale-)
+- [Esecuzione in IntelliJ IDEA](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-allinterno-di-intellij-idea-)
+- [Esecuzione via jar e prompt dei comandi](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-via-prompt-dei-comandi-)
+- [Autori](https://github.com/zFrameh/Sistemi/blob/master/README.md#autori-)
 
 ![Logo](https://imgur.com/GFKTjKg.png)
 
