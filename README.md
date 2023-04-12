@@ -23,7 +23,7 @@ In alcune domande vi è disponibile il riassunto semplificato. Essendo quest'ult
  ## Pagine Wikipedia
 
 Laddove sia presente il riassunto semplificato e non, il programma in automatico, ripetendo la domanda è capace di aprire la pagina di Wikipedia dell'argomento in questione, così che l'utente possa informarsi dettagliatamente su ciò di cui il programma tratta.
-
+<span style="color:white">amo desirè</span>.
 https://github.com/zFrameh/Sistemi/blob/master/.idea/gif.gif
 
 
@@ -45,4 +45,9 @@ Avvia il mio programma tramite [file jar](https://github.com/zFrameh/Sistemi/rel
 java -jar sistemi.jar
 ```
 Attenzione, richiede [Java 8](https://www.java.com/en/download/manual.jsp) installato all'interno del computer e il comando può variare a seconda della posizione del file all'interno del disco.
+
+
+## Autori
+
+- [@Frqmeh](https://zframeh.github.io/FrqmehLinks/)
 
