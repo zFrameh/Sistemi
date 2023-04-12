@@ -22,7 +22,7 @@ In alcune domande vi è disponibile il riassunto semplificato. Essendo quest'ult
 
 Laddove sia presente il riassunto semplificato e non, il programma in automatico, ripetendo la domanda è capace di aprire la pagina di Wikipedia dell'argomento in questione, così che l'utente possa informarsi dettagliatamente su ciò di cui il programma tratta.
 
-![hippo](https://imgur.com/ZR7hl1v.gif)
+![til](https://github.com/zFrameh/Sistemi/blob/master/.idea/gif.gif)
 
 
 ## Esecuzione via prompt dei comandi
