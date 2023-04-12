@@ -29,7 +29,7 @@ Laddove sia presente il riassunto semplificato e non, il programma in automatico
 
 ## Esecuzione all'interno di IntelliJ IDEA
 
-Avvia il mio programma nell'IDE [IntelliJ IDEA](https://www.jetbrains.com/idea/) clonando la repository (questo metodo è consigliato dato che all'interno del codice sono presenti caratteri ASCII)
+Avvia il mio programma nell'IDE [IntelliJ IDEA](https://www.jetbrains.com/idea/) clonando la repository (questo metodo è consigliato dato che all'interno del codice sono presenti caratteri ASCII che nel cmd non vengono letti)
 
 ```bash
 git clone https://github.com/zFrameh/Sistemi.git
@@ -39,7 +39,7 @@ Attenzione, richiede [Git](https://git-scm.com/) installato all'interno del comp
 
 ## Esecuzione via prompt dei comandi
 
-Avvia il mio programma tramite [file jar](https://github.com/zFrameh/Sistemi/releases/tag/sids)  e prompt dei comandi
+Avvia il mio programma tramite [file jar](https://github.com/zFrameh/Sistemi/releases/tag/sids) e prompt dei comandi (è consigliato usare il cmd in fullscreen)
 
 ```bash
 java -jar sistemi.jar
