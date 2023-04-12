@@ -30,4 +30,4 @@ Benvenuto alla documentazione ufficiale del Sapientino Interattivo di sistemi. I
 
 In alcune domande vi è disponibile il riassunto semplificato, mentre in tutte è disponibile la pagina Wikipedia ↓
 
-![Logo](https://imgur.com/ZR7hl1v.gif)
+![Logo](https://i.imgur.com/ZR7hl1v.gif)
