@@ -1,7 +1,7 @@
 
 ## Il Sapientino Interattivo di sistemi | Legenda
 
- - [Guida al programma](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-allinterno-di-intellij-idea)
+ - [Guida al programma](https://github.com/zFrameh/Sistemi/blob/master/README.md#gui-iniziale)
  - [Esecuzione via jar e prompt dei comandi](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-via-prompt-dei-comandi)
  - [Esecuzione in IntelliJ IDEA](https://github.com/zFrameh/Sistemi/blob/master/README.md#esecuzione-allinterno-di-intellij-idea)
 
